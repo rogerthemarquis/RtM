@@ -4,7 +4,7 @@ using Microsoft.JSInterop;
 
 namespace RtM.Components.Layout
 {
-    public partial class MainLayout
+    public partial class NavMenu
     {
         private bool toggleDark = false;
 

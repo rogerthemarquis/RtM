@@ -1,30 +1,8 @@
-﻿@using Blazor.Heroicons.Solid
-
-@inherits LayoutComponentBase
+﻿@inherits LayoutComponentBase
 
 <div>
     <main>
-        <header class="p-4 flex justify-between bg-slate-300 dark:bg-slate-900 ">
-            <div>
-                <h1 class="text-xl font-bold text-slate-900 dark:text-slate-300">rogerthemarquis</h1>
-            </div>
-
-            <div>
-                <button @onclick="ChangeTheme" class="bg-slate-800 dark:bg-slate-600 rounded-md hover:bg-slate-700 px-4 py-2 text-sm font-medium">
-                    @{
-                        if (toggleDark)
-                        {
-                            <SunIcon class="h-6 w-6 text-slate-300" />
-                        }
-                        else
-                        {
-                            <MoonIcon class="h-6 w-6 text-slate-300" />
-                        }
-                    }
-                </button>
-            </div>
-        </header>
-
+        <NavMenu />
         @Body
     </main>
 </div>
