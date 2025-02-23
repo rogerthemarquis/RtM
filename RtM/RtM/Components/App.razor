@@ -5,15 +5,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <base href="/" />
-    <link rel="stylesheet" href="@Assets["app.css"]" />
-    <link rel="stylesheet" href="@Assets["RtM.styles.css"]" />
+    <link rel="stylesheet" href="@Assets["./styles/tailwind/output.css"]" />
     <ImportMap />
     <HeadOutlet />
 </head>
 
 <body>
-    <Routes />
+    <Routes @rendermode="InteractiveServer" />
     <script src="_framework/blazor.web.js"></script>
+    <script src="./javascript/theme.js"></script>
+    <script>window.applySystemPreference();</script>
 </body>
 
 </html>
