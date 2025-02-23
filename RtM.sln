@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RtM", "RtM\RtM\RtM.csproj", "{14917A9D-8E2E-4BBA-BC89-C664E073C8D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RtM.Client", "RtM\RtM.Client\RtM.Client.csproj", "{E657C7D6-47E6-4D91-9312-4D94594588D0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14917A9D-8E2E-4BBA-BC89-C664E073C8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14917A9D-8E2E-4BBA-BC89-C664E073C8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14917A9D-8E2E-4BBA-BC89-C664E073C8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14917A9D-8E2E-4BBA-BC89-C664E073C8D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E657C7D6-47E6-4D91-9312-4D94594588D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E657C7D6-47E6-4D91-9312-4D94594588D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E657C7D6-47E6-4D91-9312-4D94594588D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E657C7D6-47E6-4D91-9312-4D94594588D0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {499CA65F-B24A-43A0-9DAF-1C6DAFD491D3}
+	EndGlobalSection
+EndGlobal
