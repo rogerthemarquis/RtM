@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
@@ -7,8 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="tailwindcss.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\RtM.Client\RtM.Client.csproj" />
+    <PackageReference Include="Blazor.Heroicons" Version="2.2.0" />
+    <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\Assets\" />
   </ItemGroup>
 
 </Project>
