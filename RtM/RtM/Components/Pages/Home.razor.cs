@@ -27,23 +27,5 @@ namespace RtM.Components.Pages
                 StateHasChanged();
             }
         }
-
-        private async Task ChangeTheme()
-        {
-            if (LocalStorage != null)
-            {
-                toggleDark = !toggleDark;
-                string? theme = await LocalStorage.GetItemAsStringAsync("theme");
-
-                if (theme == "dark")
-                {
-                    await LocalStorage.SetItemAsStringAsync("theme", "light");
-                }
-                else
-                {
-                    await LocalStorage.SetItemAsStringAsync("theme", "dark");
-                }
-            }
-        }
     }
 }
