@@ -1,8 +1,14 @@
 ﻿@inherits LayoutComponentBase
 
-<div>
-    <main>
+<div class="h-screen bg-zinc-400 dark:bg-stone-800">
+    <div class="container mx-auto h-full flex flex-col">
         <NavMenu />
-        @Body
-    </main>
+        <main class="flex-grow">
+            <div class="bg-slate-200 dark:bg-gray-800 p-3 ring shadow-xl ring-gray-900/5 h-full">
+                <div class="bg-slate-300 dark:bg-gray-900 p-4 w-full h-full">
+                    @Body
+                </div>
+            </div>
+        </main>
+    </div>
 </div>

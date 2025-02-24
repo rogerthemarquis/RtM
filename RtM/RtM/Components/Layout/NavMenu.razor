@@ -3,14 +3,13 @@
 
 <header class="p-2 flex items-center justify-between bg-slate-300 dark:bg-slate-900 ">
     <div class="flex">
-        <h1 class="text-xl font-bold text-slate-900 dark:text-slate-300">rogerthemarquis</h1>
-        <div class="ml-8">
+        <div>
             <NavLink href="/" class="text-slate-900 dark:text-slate-300 hover:text-slate-700 dark:hover:text-slate-400 px-2 py-2 text-sm font-medium">Home</NavLink>
             <NavLink href="/about" class="text-slate-900 dark:text-slate-300 hover:text-slate-700 dark:hover:text-slate-400 px-2 py-2 text-sm font-medium">About</NavLink>
         </div>
     </div>
-    <div>
-        <button @onclick="ChangeTheme" class="bg-slate-800 dark:bg-slate-600 rounded-md hover:bg-slate-700 px-2 py-2 text-sm font-medium">
+    <div class="mr-2">
+        <button @onclick="ChangeTheme" class="bg-slate-400 dark:bg-slate-600 rounded-md hover:bg-slate-500 dark:hover:bg-slate-500 px-1 py-1">
             @{
                 if (toggleDark)
                 {
