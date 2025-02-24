@@ -409,6 +409,9 @@
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
+  .pb-0 {
+    padding-bottom: calc(var(--spacing) * 0);
+  }
   .text-center {
     text-align: center;
   }
@@ -495,13 +498,6 @@
     &:hover {
       @media (hover: hover) {
         background-color: var(--color-slate-500);
-      }
-    }
-  }
-  .hover\:bg-slate-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-slate-700);
       }
     }
   }
