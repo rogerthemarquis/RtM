@@ -1,4 +1,8 @@
-﻿window.toggleDarkMode = (isDark) => {
+﻿window.getMediaQueryMatches = (query) => {
+    return window.matchMedia(query).matches;
+};
+
+window.toggleDarkMode = (isDark) => {
     if (isDark) {
         document.documentElement.classList.add('dark');
     } else {
