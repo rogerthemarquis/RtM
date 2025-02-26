@@ -3,9 +3,9 @@
 
 <header class="w-full bg-slate-300 dark:bg-slate-900">
     <div class="container mx-auto p-2 flex items-center justify-between">
-        <div>
-            <NavLink href="/" class="hover:text-slate-700 dark:hover:text-slate-400 px-2 py-2 text-sm font-medium">Home</NavLink>
-            <NavLink href="/about" class="hover:text-slate-700 dark:hover:text-slate-400 px-2 py-2 text-sm font-medium">About</NavLink>
+        <div class="">
+            <NavLink href="/" class="hover:text-slate-600 dark:hover:text-slate-400 px-2 py-2 text-xl" activeClass="font-semibold" Match="NavLinkMatch.All">Home</NavLink>
+            <NavLink href="/about" class="hover:text-slate-600 dark:hover:text-slate-400 px-2 py-2 text-xl" activeClass="font-semibold" Match="NavLinkMatch.Prefix">About</NavLink>
         </div>
         <div class="mr-2">
             <button @onclick="ChangeTheme" class="bg-slate-400 dark:bg-slate-600 rounded-md hover:bg-slate-500 dark:hover:bg-slate-500 px-1 py-1">
@@ -21,3 +21,4 @@
         </div>
     </div>
 </header>
+
