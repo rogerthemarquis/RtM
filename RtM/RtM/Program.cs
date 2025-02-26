@@ -1,4 +1,3 @@
-using Blazored.LocalStorage;
 using RtM.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,8 +6,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents()
     .AddInteractiveWebAssemblyComponents();
-
-builder.Services.AddBlazoredLocalStorage();
 
 var app = builder.Build();
 
@@ -25,7 +22,6 @@ else
 }
 
 app.UseHttpsRedirection();
-
 
 app.UseAntiforgery();
 
