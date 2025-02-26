@@ -1,5 +1,4 @@
-﻿using Blazored.LocalStorage;
-using Microsoft.AspNetCore.Components;
+﻿using Microsoft.AspNetCore.Components;
 using Microsoft.JSInterop;
 
 namespace RtM.Components.Layout
@@ -9,24 +8,20 @@ namespace RtM.Components.Layout
         private bool? theme;
 
         [Inject]
-        private ILocalStorageService? LocalStorage { get; set; }
-
-        [Inject]
         private IJSRuntime? JSRuntime { get; set; }
 
         protected override async Task OnAfterRenderAsync(bool firstRender)
         {
-            if (firstRender && LocalStorage != null)
+            if (firstRender)
             {
-                string? storedTheme = await LocalStorage.GetItemAsStringAsync("theme");
+                string? storedTheme = await JSRuntime!.InvokeAsync<string?>("getThemeFromCookie");
 
                 if (string.IsNullOrEmpty(storedTheme))
                 {
                     // Use the helper function to check the system preference.
-                    bool prefersDarkScheme = await JSRuntime!.InvokeAsync<bool>("getMediaQueryMatches", "(prefers-color-scheme: dark)");
-                    theme = prefersDarkScheme;
-                    // Store the system-preferred theme in local storage.
-                    await LocalStorage.SetItemAsStringAsync("theme", prefersDarkScheme ? "dark" : "light");
+                    theme = await JSRuntime!.InvokeAsync<bool>("getPrefersDarkScheme");
+                    // Store the system-preferred theme in cookie.
+                    await JSRuntime!.InvokeVoidAsync("setThemeInCookie", (bool)theme ? "dark" : "light");
                 }
                 else
                 {
@@ -39,17 +34,15 @@ namespace RtM.Components.Layout
                 StateHasChanged();
             }
         }
+
         private async Task ChangeTheme()
         {
-            if (LocalStorage != null)
-            {
-                theme = !theme;
-                // Store the value as "dark" if true; otherwise "light".
-                var themeValue = theme == true ? "dark" : "light";
-                await LocalStorage.SetItemAsStringAsync("theme", themeValue);
-                await JSRuntime!.InvokeVoidAsync("toggleDarkMode", theme);
-                StateHasChanged();
-            }
+            theme = !theme;
+            // Store the value as "dark" if true; otherwise "light".
+            var themeValue = theme == true ? "dark" : "light";
+            await JSRuntime!.InvokeVoidAsync("setThemeInCookie", themeValue);
+            await JSRuntime!.InvokeVoidAsync("toggleDarkMode", theme);
+            StateHasChanged();
         }
     }
 }
