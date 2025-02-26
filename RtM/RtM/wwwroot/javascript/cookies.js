@@ -1,7 +1,5 @@
 ﻿window.setThemeInCookie = (theme) => {
-    const expires = new Date();
-    expires.setTime(expires.getTime() + (1 * 60 * 60 * 1000)); // 1 hour
-    document.cookie = `theme=${theme}; path=/; Secure; HttpOnly; SameSite=Strict; Expires=${expires.toUTCString()}`;
+    document.cookie = `theme=${theme}; path=/;`;
 };
 
 window.getThemeFromCookie = () => {
