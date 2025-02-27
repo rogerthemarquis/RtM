@@ -13,7 +13,6 @@
   <ItemGroup>
     <ProjectReference Include="..\RtM.Client\RtM.Client.csproj" />
     <PackageReference Include="Blazor.Heroicons" Version="2.2.0" />
-    <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.2" />
   </ItemGroup>
 
