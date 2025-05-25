@@ -7,17 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="tailwindcss.exe" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\RtM.Client\RtM.Client.csproj" />
     <PackageReference Include="Blazor.Heroicons" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="9.0.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components\Assets\" />
+    <None Include="wwwroot\images\self.jpg" />
   </ItemGroup>
 
 </Project>
