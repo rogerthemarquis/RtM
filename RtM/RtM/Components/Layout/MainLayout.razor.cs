@@ -47,5 +47,10 @@ namespace RtM.Components.Layout
             await JSRuntime!.InvokeVoidAsync("toggleDarkMode", theme);
             StateHasChanged();
         }
+
+        private async Task ScrollToAbout()
+        {
+            await JSRuntime!.InvokeVoidAsync("scrollToSection", "about");
+        }
     }
 }
