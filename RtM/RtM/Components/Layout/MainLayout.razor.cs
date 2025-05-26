@@ -32,6 +32,9 @@ namespace RtM.Components.Layout
                 // Apply the theme using your JavaScript function.
                 await JSRuntime!.InvokeVoidAsync("toggleDarkMode", theme);
                 StateHasChanged();
+                // Wait for DOM update
+                await Task.Yield();
+                await JSRuntime!.InvokeVoidAsync("initParticles");
             }
         }
 
