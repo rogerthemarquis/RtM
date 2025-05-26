@@ -1,28 +1,69 @@
 ﻿@using Blazor.Heroicons.Solid
 @page "/"
 
-<div class="pl-5 min-h-screen">
-    <div>
-        <h1 class="text-3xl font-bold">Roger Marquis</h1>
-        <small>Full Stack Software Engineer</small>
+<!-- Profile and Skills section anchor for About -->
+<div class="pl-5 min-h-screen flex flex-col items-center text-center pt-8">
+    <div class="relative w-44 h-44 rounded-full overflow-hidden border-4 border-slate-500 dark:border-slate-700 mb-5">
+        <img src="images/self.jpg"
+             alt="Roger Marquis"
+             class="absolute inset-0 w-48 h-48 object-cover" />
     </div>
-    <div class="flex mt-5 gap-5 md:gap-10 items-center">
-        <img src="images/self.jpg" alt="Roger Marquis" class="w-40 h-40 rounded-full object-cover" />
-    </div>
-    <p class="mt-5 max-w-2xl">
-        I am a full stack software engineer with a passion for building web applications. I have experience in various technologies including .NET, Blazor, and JavaScript frameworks. I enjoy working on challenging projects and continuously learning new skills.
+    <p class="mt-2 max-w-2xl">
+        Full stack software engineer with a passion for building web applications.
+        I am motivated by challenging projects and continuous learning, and have a professional background building internal and external web apps for Gallup.
+        Proficient in various technologies including Java, .NET, Blazor, JavaScript frameworks, and Databases.
     </p>
-</div>
-<div class="flex justify-center text-center min-h-100">
-    <div>
-        <div>
-            <h3 class="text-base font-medium tracking-tight">About</h3>
-        </div>
-        <span class="text-sm">
-            Under construction...
-        </span>
-        <div class="flex items-center justify-center">
-            <WrenchScrewdriverIcon class="size-16 text-gray-500 dark:text-gray-400 " />
+    <div id="skills" class="w-full max-w-4xl px-4 mt-8">
+        <h2 class="text-2xl font-bold mb-6 text-slate-700 dark:text-slate-200">Skills and Technologies</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mt-8">
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/blazor.png" alt="Blazor" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">BLAZOR</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/dotnet.png" alt="Blazor" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">.NET</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/java.png" alt="Java" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">JAVA</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/oracle.png" alt="Oracle" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">ORACLE</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/html.png" alt="HTML" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">HTML</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/css.png" alt="CSS" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">CSS</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/react.png" alt="React" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">REACT</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/sass.png" alt="Sass" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">SASS</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/less.png" alt="Less" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">LESS</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/node.png" alt="Node.js" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">NODE.JS</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/sql.png" alt="sql" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">SQL</div>
+            </div>
+            <div class="flex flex-col items-center bg-slate-200 dark:bg-slate-800 rounded-xl shadow-md p-4 hover:scale-105 transition-transform duration-200">
+                <img src="./images/git.png" alt="Git" class="w-12 h-12 mb-2" />
+                <div class="text-sm font-semibold text-slate-700 dark:text-slate-200">GIT</div>
+            </div>
         </div>
     </div>
 </div>

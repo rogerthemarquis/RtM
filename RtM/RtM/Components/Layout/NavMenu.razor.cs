@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Components;
+using Microsoft.JSInterop;
 
 namespace RtM.Components.Layout
 {
@@ -11,5 +12,19 @@ namespace RtM.Components.Layout
 
         [Parameter]
         public EventCallback ChangeTheme { get; set; }
+        private async Task ScrollToTop()
+        {
+            await JS.InvokeVoidAsync("scrollToSection", "top");
+        }
+
+        private async Task ScrollToAbout()
+        {
+            await JS.InvokeVoidAsync("scrollToSection", "about");
+        }
+
+        private async Task ScrollToProfileSkills()
+        {
+            await JS.InvokeVoidAsync("scrollToSection", "skills");
+        }
     }
 }
