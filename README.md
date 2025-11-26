@@ -6,7 +6,7 @@ A modern, interactive portfolio website built with Blazor WebAssembly and .NET 9
 ![Blazor](https://img.shields.io/badge/Blazor-WebAssembly-512BD4?logo=blazor)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.x-06B6D4?logo=tailwindcss)
 
-## ?? Features
+## Features
 
 - **Interactive Particle Background**: Dynamic particle.js animation on the hero section
 - **Dark/Light Theme**: Persistent theme preference using browser localStorage
@@ -15,7 +15,7 @@ A modern, interactive portfolio website built with Blazor WebAssembly and .NET 9
 - **Blazor WebAssembly**: Fast, client-side rendering with C# and .NET 9
 - **Interactive Server Components**: Hybrid rendering mode support
 
-## ??? Tech Stack
+## Tech Stack
 
 - **.NET 9** - Latest .NET framework
 - **Blazor WebAssembly** - Client-side web UI framework
@@ -24,7 +24,7 @@ A modern, interactive portfolio website built with Blazor WebAssembly and .NET 9
 - **JavaScript Interop** - For particle.js and theme management
 - **Blazor.Heroicons** - Icon library
 
-## ?? Project Structure
+## Project Structure
 
 ```
 RtM/
@@ -51,7 +51,7 @@ RtM/
     ??? RtM.Client.csproj
 ```
 
-## ?? Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -86,7 +86,7 @@ RtM/
 5. **Open your browser**
    Navigate to `https://localhost:7124` (or the port shown in your console)
 
-## ?? Customization
+## Customization
 
 ### Theme Management
 
@@ -107,7 +107,7 @@ The project uses Tailwind CSS for styling. To customize:
 2. Update `styles/tailwind/` configuration if needed
 3. Recompile Tailwind CSS (if using the Tailwind CLI)
 
-## ?? Dependencies
+## Dependencies
 
 ### Server Project (RtM)
 - `Microsoft.AspNetCore.Components.WebAssembly.Server` v9.0.2
@@ -116,7 +116,7 @@ The project uses Tailwind CSS for styling. To customize:
 ### Client Project (RtM.Client)
 - `Microsoft.AspNetCore.Components.WebAssembly` v9.0.2
 
-## ?? Deployment
+## Deployment
 
 ### Build for Production
 
@@ -134,7 +134,7 @@ The published files will be in `RtM/bin/Release/net9.0/publish/`
 - **Vercel**
 - **Any static file hosting service**
 
-## ?? Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
@@ -144,27 +144,16 @@ Contributions, issues, and feature requests are welcome!
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## ?? License
-
-This project is open source and available under the [MIT License](LICENSE).
-
-## ?? Author
+## Author
 
 **Roger Marquis**
 - GitHub: [@rogerthemarquis](https://github.com/rogerthemarquis)
-- Portfolio: [Your Portfolio URL]
 
-## ?? Acknowledgments
+## Acknowledgments
 
 - [Blazor](https://blazor.net/) - Microsoft's web framework
 - [Particle.js](https://particles.js.org/) - Particle animation library
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - [Heroicons](https://heroicons.com/) - Icon library
 
-## ?? Screenshots
-
-*Add screenshots of your portfolio here*
-
 ---
-
-?? If you found this project helpful, please consider giving it a star!
