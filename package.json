@@ -1,6 +1,30 @@
 {
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.7",
-    "tailwindcss": "^4.1.7"
-  }
+    "@tailwindcss/cli": "^4.1.7"
+  },
+  "name": "rtm",
+  "version": "1.0.0",
+  "description": "A modern, interactive portfolio website built with Blazor WebAssembly and .NET 9, featuring a particle.js background animation, dark/light theme toggle, and smooth scrolling navigation.",
+  "main": "index.js",
+  "devDependencies": {
+    "tailwindcss": "^4.1.17"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./RtM/RtM/wwwroot/styles/tailwind/input.css -o ./RtM/RtM/wwwroot/styles/tailwind/output.css",
+    "build:css:prod": "tailwindcss -i ./RtM/RtM/wwwroot/styles/tailwind/input.css -o ./RtM/RtM/wwwroot/styles/tailwind/output.css --minify",
+    "watch:css": "tailwindcss -i ./RtM/RtM/wwwroot/styles/tailwind/input.css -o ./RtM/RtM/wwwroot/styles/tailwind/output.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerthemarquis/RtM.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rogerthemarquis/RtM/issues"
+  },
+  "homepage": "https://github.com/rogerthemarquis/RtM#readme"
 }
