@@ -28,27 +28,27 @@ A modern, interactive portfolio website built with Blazor WebAssembly and .NET 9
 
 ```
 RtM/
-??? RtM/                          # Server project
-?   ??? Components/
-?   ?   ??? Layout/
-?   ?   ?   ??? MainLayout.razor  # Main layout with hero section
-?   ?   ?   ??? NavMenu.razor     # Navigation menu
-?   ?   ?   ??? Footer.razor      # Footer component
-?   ?   ??? Pages/
-?   ?   ?   ??? Home.razor        # Home page with skills section
-?   ?   ??? App.razor             # Root component
-?   ??? wwwroot/
-?   ?   ??? javascript/
-?   ?   ?   ??? cookies.js        # Theme localStorage management
-?   ?   ?   ??? scrollHelper.js   # Smooth scrolling utilities
-?   ?   ?   ??? particles.js      # Particle.js library
-?   ?   ?   ??? initParticles.js  # Particle initialization
-?   ?   ??? images/               # Image assets
-?   ?   ??? styles/               # Tailwind CSS styles
-?   ??? Program.cs                # Application entry point
-?
-??? RtM.Client/                   # WebAssembly client project
-    ??? RtM.Client.csproj
+  RtM/                            (Server project)
+    Components/
+      Layout/
+        MainLayout.razor          (Main layout with hero section)
+        NavMenu.razor             (Navigation menu)
+        Footer.razor              (Footer component)
+      Pages/
+        Home.razor                (Home page with skills section)
+      App.razor                   (Root component)
+    wwwroot/
+      javascript/
+        cookies.js                (Theme localStorage management)
+        scrollHelper.js           (Smooth scrolling utilities)
+        particles.js              (Particle.js library)
+        initParticles.js          (Particle initialization)
+      images/                     (Image assets)
+      styles/                     (Tailwind CSS styles)
+    Program.cs                    (Application entry point)
+
+  RtM.Client/                     (WebAssembly client project)
+    RtM.Client.csproj
 ```
 
 ## Getting Started
@@ -157,3 +157,5 @@ Contributions, issues, and feature requests are welcome!
 - [Heroicons](https://heroicons.com/) - Icon library
 
 ---
+
+**Star this project if you find it useful!**
