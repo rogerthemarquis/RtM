@@ -155,7 +155,3 @@ Contributions, issues, and feature requests are welcome!
 - [Particle.js](https://particles.js.org/) - Particle animation library
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - [Heroicons](https://heroicons.com/) - Icon library
-
----
-
-**Star this project if you find it useful!**
