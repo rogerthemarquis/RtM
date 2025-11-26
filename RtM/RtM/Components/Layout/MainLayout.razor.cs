@@ -14,14 +14,14 @@ namespace RtM.Components.Layout
         {
             if (firstRender)
             {
-                string? storedTheme = await JSRuntime!.InvokeAsync<string?>("getThemeFromCookie");
+                string? storedTheme = await JSRuntime!.InvokeAsync<string?>("getThemeFromLocalStorage");
 
                 if (string.IsNullOrEmpty(storedTheme))
                 {
                     // Use the helper function to check the system preference.
                     theme = await JSRuntime!.InvokeAsync<bool>("getPrefersDarkScheme");
-                    // Store the system-preferred theme in cookie.
-                    await JSRuntime!.InvokeVoidAsync("setThemeInCookie", (bool)theme ? "dark" : "light");
+                    // Store the system-preferred theme in localStorage.
+                    await JSRuntime!.InvokeVoidAsync("setThemeInLocalStorage", (bool)theme ? "dark" : "light");
                 }
                 else
                 {
@@ -43,7 +43,7 @@ namespace RtM.Components.Layout
             theme = !theme;
             // Store the value as "dark" if true; otherwise "light".
             var themeValue = theme == true ? "dark" : "light";
-            await JSRuntime!.InvokeVoidAsync("setThemeInCookie", themeValue);
+            await JSRuntime!.InvokeVoidAsync("setThemeInLocalStorage", themeValue);
             await JSRuntime!.InvokeVoidAsync("toggleDarkMode", theme);
             StateHasChanged();
         }
